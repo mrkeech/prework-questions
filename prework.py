@@ -52,8 +52,8 @@ print(is_leap_year(2004))
 
 def is_consecutive(a_list):
     """Determines if a given list has consecutive integers"""
-    return sorted(a_list) == list(range(min(a_list), max(a_list)+1))
+    return a_list == list(range(min(a_list), max(a_list)+1))
     
 
-a_list = [1,2,3,4]
+a_list = [1,2,3,5]
 print(is_consecutive(a_list))
